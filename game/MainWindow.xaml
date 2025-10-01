@@ -31,10 +31,10 @@
         HorizontalContentAlignment="Center"
         Content="My Epic Game" />
         <StackPanel>
-            <Button>Play</Button>
-            <Button>High Scores</Button>
-            <Button>Settings</Button>
-            <Button>Quit</Button>
-        </StackPanel>
+            <Button Click="Play_Button_Click">Play</Button>
+            <Button Click="High_Scores_Button_Click">High Scores</Button>
+            <Button Click="Settings_Button_Click">Settings</Button>
+            <Button Click="Quit_Button_Click">Quit</Button>
+        </StackPanel>   
     </Grid>
 </Window>

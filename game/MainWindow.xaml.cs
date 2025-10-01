@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -16,9 +17,32 @@ namespace game
     /// </summary>
     public partial class MainWindow : Window
     {
+        
         public MainWindow()
         {
             InitializeComponent();
         }
+
+        private void Play_Button_Click(object sender, RoutedEventArgs e)
+        {
+            Window1 naam_invoeren = new Window1();
+            naam_invoeren.Visibility = Visibility.Visible;
+        }
+
+        private void High_Scores_Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Settings_Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Quit_Button_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
+
     }
 }
