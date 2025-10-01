@@ -5,8 +5,36 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:game"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="500" Width="800">
     <Grid>
-
+        <!-- Het gele Grid -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"></RowDefinition>
+            <RowDefinition Height="100"></RowDefinition>
+            <RowDefinition Height="100"></RowDefinition>
+            <RowDefinition Height="100"></RowDefinition>
+            <RowDefinition Height="100"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="1">
+            <!-- Het groene Grid -->
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"></ColumnDefinition>
+                <ColumnDefinition Width="3*"></ColumnDefinition>
+                <ColumnDefinition Width="2*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+        </Grid>
+        <Label Grid.Row="0"
+        FontFamily="Comic Sans MS"
+        FontSize="36"
+        FontWeight="Bold"
+        VerticalContentAlignment="Center"
+        HorizontalContentAlignment="Center"
+        Content="My Epic Game" />
+        <StackPanel>
+            <Button>Play</Button>
+            <Button>High Scores</Button>
+            <Button>Settings</Button>
+            <Button>Quit</Button>
+        </StackPanel>
     </Grid>
 </Window>
