@@ -5,36 +5,37 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:game"
         mc:Ignorable="d"
-        Title="MainWindow" Height="500" Width="800">
+        Title="MainWindow" Height="515" Width="800">
+
     <Grid>
-        <!-- Het gele Grid -->
+        <!-- Grid -->
         <Grid.RowDefinitions>
-            <RowDefinition Height="100"></RowDefinition>
-            <RowDefinition Height="100"></RowDefinition>
-            <RowDefinition Height="100"></RowDefinition>
-            <RowDefinition Height="100"></RowDefinition>
-            <RowDefinition Height="100"></RowDefinition>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="100"/>
         </Grid.RowDefinitions>
-        <Grid Grid.Row="1">
-            <!-- Het groene Grid -->
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="2*"></ColumnDefinition>
-                <ColumnDefinition Width="3*"></ColumnDefinition>
-                <ColumnDefinition Width="2*"></ColumnDefinition>
-            </Grid.ColumnDefinitions>
-        </Grid>
-        <Label Grid.Row="0"
-        FontFamily="Comic Sans MS"
-        FontSize="36"
-        FontWeight="Bold"
-        VerticalContentAlignment="Center"
-        HorizontalContentAlignment="Center"
-        Content="My Epic Game" />
-        <StackPanel>
-            <Button Click="Play_Button_Click">Play</Button>
-            <Button Click="High_Scores_Button_Click">High Scores</Button>
-            <Button Click="Settings_Button_Click">Settings</Button>
-            <Button Click="Quit_Button_Click">Quit</Button>
-        </StackPanel>   
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- De titel -->
+        <Label Grid.Row="0" Grid.ColumnSpan="3"
+               FontFamily="Comic Sans MS"
+               FontSize="36"
+               FontWeight="Bold"
+               VerticalContentAlignment="Center"
+               HorizontalContentAlignment="Center"
+               Content="My Epic Game" />
+
+        <!-- De buttons -->
+        <Button Grid.Row="1" Grid.Column="1" Click="Play_Button_Click" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontFamily="Comic Sans MS" FontSize="32">Play</Button>
+        <Button Grid.Row="2" Grid.Column="1" Click="High_Scores_Button_Click" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontFamily="Comic Sans MS" FontSize="32">High Scores</Button>
+        <Button Grid.Row="3" Grid.Column="1" Click="Settings_Button_Click" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontFamily="Comic Sans MS" FontSize="32">Settings</Button>
+        <Button Grid.Row="4" Grid.Column="1" Click="Quit_Button_Click" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontFamily="Comic Sans MS" FontSize="32">Quit</Button>
     </Grid>
 </Window>
