@@ -41,6 +41,12 @@ namespace game
             this.Visibility = Visibility.Hidden;
         }
 
+        private void GameWindow_Finnish_Game_Button_Click(object sender, RoutedEventArgs e)
+        {
+            StartPage sp = new StartPage();
+            sp.Visibility = Visibility.Visible;
+            this.Visibility = Visibility.Hidden;
+        }
 
     }
 }

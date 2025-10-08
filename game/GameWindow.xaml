@@ -37,6 +37,16 @@
             Back
         </Button>
 
+        <Button Grid.Row="0" 
+                Grid.Column="2" 
+                Click="GameWindow_Finnish_Game_Button_Click" 
+                HorizontalAlignment="Stretch" 
+                VerticalAlignment="Stretch" 
+                FontFamily="Comic Sans MS" 
+                FontSize="28">
+            Finnish Game
+        </Button>
+
         <TextBlock x:Name="PlayerNameTextBlock"
                    Grid.Row="0"
                    Grid.Column="1"
