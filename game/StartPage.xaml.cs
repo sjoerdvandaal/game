@@ -13,21 +13,24 @@ using System.Windows.Shapes;
 namespace game
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for StartPage.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class StartPage : Window
     {
-        
-        public MainWindow()
+
+        public StartPage()
         {
             InitializeComponent();
         }
 
         private void Play_Button_Click(object sender, RoutedEventArgs e)
         {
-            Window1 naam_invoeren = new Window1();
-            naam_invoeren.Visibility = Visibility.Visible;
+            EnterName en = new EnterName();
+            en.Visibility = Visibility.Visible;
+            this.Visibility = Visibility.Hidden;
         }
+
+
 
         private void High_Scores_Button_Click(object sender, RoutedEventArgs e)
         {
