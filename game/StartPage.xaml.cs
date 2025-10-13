@@ -36,8 +36,27 @@ namespace game
 
         private void Settings_Button_Click(object sender, RoutedEventArgs e)
         {
+            var settings = new SettingsWindow
+            {
+                Owner = this,
+                WindowStartupLocation = WindowStartupLocation.Manual,
+                WindowState = this.WindowState // StartPage imitate
+            };
 
+            
+            if (this.WindowState != WindowState.Maximized)
+            {
+                settings.Width = this.Width;
+                settings.Height = this.Height;
+                settings.Left = this.Left;
+                settings.Top = this.Top;
+            }
+
+            settings.ShowDialog();
         }
+
+
+
 
         private void Quit_Button_Click(object sender, RoutedEventArgs e)
         {
