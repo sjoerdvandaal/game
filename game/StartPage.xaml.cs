@@ -39,7 +39,9 @@ namespace game
 
         private void Settings_Button_Click(object sender, RoutedEventArgs e)
         {
-
+            SettingsWindow sw = new SettingsWindow();
+            sw.Visibility = Visibility.Visible;
+            this.Visibility = Visibility.Hidden;
         }
 
         private void Quit_Button_Click(object sender, RoutedEventArgs e)
